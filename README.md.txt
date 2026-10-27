@@ -1,12 +1,13 @@
+   # BÀI THI THỰC HÀNH - CÂU 1
+   - Họ và tên: Nguyễn Huỳnh Quốc Anh
+   - MSSV: 2474802010010
 
+# Câu 1
 
-   ## Minh chứng Câu 1
-# BÀI THI THỰC HÀNH - CÂU 1
-- Họ và tên: Nguyễn Huỳnh Quốc Anh
-- MSSV: 2474802010010
+![Validation Error](screenshots/cau1_validation_error.png)
 
-## Minh chứng Câu 1
-![Anh 1](screenshots/anh1.png)
-![Anh 2](screenshots/anh1%282%29.png)
-![Anh 3](screenshots/anh1%283%29.png)
-![Anh 4](screenshots/anh1%284%29.png)
+![Validation Success](screenshots/cau1_validation_success.png)
+
+# Câu 2
+
+![Profile Intent](screenshots/cau2_profile_intent.png)
