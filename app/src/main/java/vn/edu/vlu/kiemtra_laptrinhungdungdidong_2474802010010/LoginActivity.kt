@@ -1,5 +1,6 @@
 package vn.edu.vlu.kiemtra_laptrinhungdungdidong_2474802010010
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
@@ -30,17 +31,26 @@ class LoginActivity : AppCompatActivity() {
             when {
                 email.isEmpty() && password.isEmpty() ->
                     showError("Vui lòng nhập Email và Mật khẩu!")
+
                 email.isEmpty() ->
                     showError("Email không được để trống!")
+
                 password.isEmpty() ->
                     showError("Mật khẩu không được để trống!")
+
                 !Patterns.EMAIL_ADDRESS.matcher(email).matches() ->
                     showError("Email sai định dạng!")
+
                 password.length < 6 ->
                     showError("Mật khẩu phải có ít nhất 6 ký tự!")
+
                 else -> {
                     tvStatus.setTextColor(0xFF2E7D32.toInt())
                     tvStatus.text = "Xác thực thành công!"
+
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("EMAIL", email)
+                    startActivity(intent)
                 }
             }
         }
